@@ -121053,7 +121053,7 @@ afT(a){var s=0,r=A.t(t.lm),q,p=2,o=[],n,m,l,k,j,i
 var $async$DN=A.o(function(b,c){if(b===1){o.push(c)
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.n(A.WQ("client.database.call('get_accounts', [['"+a+"']]);"),$async$DN)
+return A.n(A.WQ("window.dhiveClient.database.call('get_accounts', [['"+a+"']]);"),$async$DN)
 case 7:n=c
 m=A.boj(n,A.bQE(),!0,t.aZ)
 q=m
@@ -121418,7 +121418,7 @@ afM(a,b,c){var s=0,r=A.t(t.Em),q,p=2,o=[],n,m,l,k,j,i
 var $async$mW=A.o(function(d,e){if(d===1){o.push(e)
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.n(A.WQ("client.database.getAccountHistory('"+a+"', "+b+","+c+", dhive.utils.makeBitMaskFilter([dhive.utils.operationOrders.transfer]));"),$async$mW)
+return A.n(A.WQ("window.dhiveClient.database.getAccountHistory('"+a+"', "+b+","+c+", window.dhiveUtils.makeBitMaskFilter([window.dhiveUtils.operationOrders.transfer]));"),$async$mW)
 case 7:n=e
 m=A.boi(n,new A.alH(),t.uA)
 q=m
@@ -121515,7 +121515,7 @@ s=p}while(true)switch(s){case 0:h=null
 g=null
 p=4
 s=7
-return A.n(A.WQ("client.hivemind.getAccountPosts({ account: '"+a+"', sort: 'posts', start_author: "+A.j(n.af5(0,h))+", start_permlink: "+A.j(n.af5(0,g))+", limit: "+b+" });"),$async$DM)
+return A.n(A.WQ("window.dhiveClient.hivemind.getAccountPosts({ account: '"+a+"', sort: 'posts', start_author: "+A.j(n.af5(0,h))+", start_permlink: "+A.j(n.af5(0,g))+", limit: "+b+" });"),$async$DM)
 case 7:m=d
 l=A.boi(m,new A.alI(),t.vb)
 q=l
