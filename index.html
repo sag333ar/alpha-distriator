@@ -82,7 +82,7 @@
     async
   ></script>
 
-  <script>
+  <!-- <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
         .register("flutter_service_worker.js")
@@ -102,7 +102,7 @@
           });
         });
     }
-  </script>
+  </script> -->
 
   <script>
     async function getPermissions() {
@@ -202,9 +202,6 @@
     window.addEventListener("load", function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
         onEntrypointLoaded: function (engineInitializer) {
           engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp().then(function (app) {
@@ -325,10 +322,6 @@
   }
 
 
-  </script>
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = '"2252569130"';
   </script>
   <script src="flutter.js" defer></script>
 </body>
